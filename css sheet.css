@@ -132,6 +132,10 @@ body {
     right: 0;
 }
 
+.top-search-sign {
+    display: none;
+}
+
 .search-container {
     padding: 0 20px;
 }
@@ -172,14 +176,14 @@ body {
 }
 .badge {
     padding: 0px;
-    position: absolute;
+    position: relative;
     background: #000;
     color: #fff;
     width: 15px;
     height: 15px;
     border-radius: 15px;
     margin: 0px;
-    top: 8px;
+    top: -14px;
     right: 9px;
     font-size: 70%;    
 }
@@ -1094,25 +1098,61 @@ body {
         display: block;
         margin: 0 auto 4px;
     }
+    .main-user-logins .user-logins .login-face{
+        display: none;
+    }
+    .user-logins ul li i {
+        padding: 0px 10px;
+    }
+    .user-logins {
+        padding-right: 15px;
+    }
+    .top-search-sign {
+        display: block;
+    }
+    .search-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .search-box {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 1079px) {
+    .search-box {
+        width: 210px;
+    }
 }
 
 @media screen and (max-width: 997px) {
-
-    /* this is for making burger */
-
-    .header .navbar-toggler {
-        display: block;
-        position: absolute;
-        left: 20px;
-        top: 14px;
-        padding: 0;
-    }
-    .header .navbar-toggler-icon span {
-        height: 2px;
-        width: 100%;
-        background-color: #000;
-        display: block;
-        margin: 6px 0;
+    .menu-update {
+        display: none;
     }
 
+    .navbar-brand::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 600;
+        content: "\f060";
+        color: #000;
+        font-size: 30px;
+        position: relative;
+        left: -3px;
+        right: 14px;
+        top: 8px;
+        -webkit-text-stroke: 0px;
+        padding: 0px 10px;
+
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .navbar-brand>img {
+        width: 120px!important;
+        height: auto;
+        top: 0px;
+        position: relative;
+    }
 }
