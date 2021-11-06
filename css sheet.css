@@ -822,7 +822,20 @@ body {
     .social__share_main {
         display: none;
     }
+    .header {
+        padding: 5px 0px 5px 0px;
+    }
+    .navbar-brand::before {
+        font-size: 25px!important;
+    }
 
+    .header_marquee p {
+        font-size: 12px;
+        line-height: 32px;
+    }
+    .header_marquee {
+        height: 32px;
+    }
     .social__share_main_new {
         display: block;
         position: absolute;
@@ -1152,7 +1165,10 @@ body {
     .navbar-brand>img {
         width: 120px!important;
         height: auto;
-        top: 0px;
+        top: -6px;
         position: relative;
+    }
+    .navbar-brand::before {
+        top: 1px;
     }
 }
